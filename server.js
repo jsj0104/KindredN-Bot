@@ -59,6 +59,9 @@ Safety notes:
 
 Support:
 For customer service, email support@kindrednutritionals.com or visit https://www.kindrednutritionals.com/pages/refund-policy
+
+30 Day Risk Free Trial:
+Information Found here: https://www.kindrednutritionals.com/pages/refund-policy
       `.trim()
     },
       { role: "user", content: userMessage }
