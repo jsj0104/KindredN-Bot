@@ -1,6 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const { Configuration, OpenAIApi } = require("openai");
+import express from 'express';
+import cors from 'cors';
+import { Configuration, OpenAIApi } from 'openai';
 
 const app = express();
 app.use(cors());
@@ -19,7 +19,7 @@ app.post("/chat", async (req, res) => {
     messages: [
       {
         role: "system",
-        content: `You are a helpful AI assistant for Kindred Nutritionals. Respond clearly, safely, and kindly. Explain the benefits of nootropic ingredients in Kindred Flow. Never make medical claims. Always refer to the ingredients accurately, and if unsure, suggest checking with a healthcare professional.`
+        content: "You are a helpful AI assistant for Kindred Nutritionals. Respond clearly, safely, and kindly. Explain the benefits of nootropic ingredients in Kindred Flow. Never make medical claims. Always refer to the ingredients accurately, and if unsure, suggest checking with a healthcare professional."
       },
       { role: "user", content: userMessage }
     ],
